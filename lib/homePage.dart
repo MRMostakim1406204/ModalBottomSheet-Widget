@@ -16,7 +16,9 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
       ),
       body: Center(
-        child: TextButton(onPressed: (){
+        child: ElevatedButton(
+          
+          onPressed: (){
          showModalBottomSheet(context: context,
           builder: (context){
           return Column(
@@ -75,7 +77,7 @@ class _HomePageState extends State<HomePage> {
 
         }, //nicer child textbutton ar button
          child: Text("Show Modal Sheet",style: TextStyle(
-          fontSize: 20,color: Colors.pink,
+          fontSize: 20,color: Colors.black,
          ),)),
       ),
     );
